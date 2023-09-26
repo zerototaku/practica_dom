@@ -38,8 +38,6 @@ createUser (user);
 //Eventoss
 const inputName = document.getElementById ('name');
 const userName = document.getElementById('username');
-const inputedad = document.getElementById('edad');
-const age= document.getElementById('age');
 /*
 inputName.addEventListener('input', e => {
     console.log(e.target.value);
@@ -48,14 +46,27 @@ inputName.addEventListener('input', e => {
 
 const profileBtn = document.getElementById('profilebtn');
 profileBtn.addEventListener('click', () => {
-    
     userName.textContent = inputName.value;
 })
-profileBtn.addEventListener('click', () => {
-    inputedad.textContent = age.value;
-})
+
 
 const createCard = () =>{
     const card = document.createElement('div');
     card.classList.add('profile','container');
+    return card;
 }
+
+const createDescription= () =>{
+    const userElements={
+        user_name:document.createElement('h2'),
+        age: document.createElement('h2'),
+        description: document.createElement('p'),
+        bands:[],
+    }
+
+    return userElements;
+}
+
+user.forEach(user =>{
+    const
+})
